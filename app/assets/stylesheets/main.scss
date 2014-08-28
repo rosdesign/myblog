@@ -370,12 +370,15 @@ body {
 
 /* 작업시작 */
 
-.main-black-box {
+.profile {
 
+    /* 아래 속성 relative -> absoulte */
+    position: relative;
     font-family: 'BM-JUA', serif;
-    
-    .black-box{
+    margin-top: -300px;
 
+
+    .black-box{
         padding : 20px;
         background : #000000;
         background : rgba(0, 0, 0, 1);
@@ -385,80 +388,115 @@ body {
         -webkit-border-radius : 15px;
         filter: alpha(opacity=40) progid:DXImageTransform.Microsoft.Alpha(opacity=40) ;
         position: absolute;
+        width: 100%;
+        height: 600px;
+
+
     }
 
-    > img {
+    .profile-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 45px;
+
+        > img {
         border-radius: 100%;
         border: 6px solid #FFF;
         width: 200px;
-    }
+        }
 
-    .name{
-        font-size: 36px;
-    }
+        .name{
+            font-size: 36px;
+        }
 
-    .job{
-        font-size: 20px;
-        color: #b2b2b2;
-    }
-    
-    .contents{
-        font-size: 22px;
-        margin-top: 20px;
-        padding: 0 20%;
-        /* font-family: 'nanum gothic coding', serif; 
-        letter-spacing: -4px;*/
-    }
-
-    .line{
-        margin: 40px auto;
-        border-bottom: 2px solid #989898;
-        width: 450px;
-    }
-
-    .sns-icon{
-        display: inline-block;
-        vertical-align: top;
+        .job{
+            font-size: 20px;
+            color: #b2b2b2;
+        }
         
-        .youtube {
-            background: url('sns_icon.png') no-repeat -1px 0px;
-            width: 50px;
-            height: 65px;
-            position: absolute;
-
+        .contents{
+            font-size: 22px;
+            margin-top: 20px;
+            padding: 0 20%;
+            /* font-family: 'nanum gothic coding', serif; 
+            letter-spacing: -4px;*/
         }
 
-        .facebook {
-            background: url('sns_icon.png') no-repeat -101px 0px;
-            width: 50px;
-            height: 65px;
-            position: absolute;
+        .line{
+            margin: 40px auto;
+            border-bottom: 2px solid #989898;
+            width: 450px;
         }
 
-        .twitter {
-            background: url('sns_icon.png') no-repeat -201px 10px;
-            width: 50px;
-            height: 65px;
-            position: absolute;
-        }
+        .sns-icon{
+            display: inline-block;
+            vertical-align: top;
 
-        .pinterest {
-            background: url('sns_icon.png') no-repeat -301px 10px;
-            width: 50px;
-            height: 65px;
-            position: absolute;
-        }
+            .youtube {
+                background: url('sns_icon.png') no-repeat -1px 0px;
+                width: 50px;
+                height: 65px;
+                display: inline-block;
+                margin: 0 1em;
 
-        .instagram {
-            background: url('sns_icon.png') no-repeat -401px 10px;
-            width: 50px;
-            height: 65px;
-            position: absolute;
+
+                &:hover {
+                    background: url('sns_icon_hover.png') no-repeat -1px 0px;
+                }
+            }
+
+            .facebook {
+                background: url('sns_icon.png') no-repeat -101px 0px;
+                width: 50px;
+                height: 65px;
+                display: inline-block;    
+                margin: 0 1em;
+
+                &:hover {
+                    background: url('sns_icon_hover.png') no-repeat -101px 0px;
+                }    
+            }
+
+            .twitter {
+                background: url('sns_icon.png') no-repeat -201px 0px;
+                width: 50px;
+                height: 65px;
+                display: inline-block;    
+                margin: 0 1em;
+
+                &:hover {
+                    background: url('sns_icon_hover.png') no-repeat -201px 0px;
+                }
+            }
+
+            .pinterest {
+                background: url('sns_icon.png') no-repeat -301px 0px;
+                width: 50px;
+                height: 65px;
+                display: inline-block;            
+                margin: 0 1em;
+
+                &:hover {
+                    background: url('sns_icon_hover.png') no-repeat -301px 0px;
+                }
+            }
+
+            .instagram {
+                background: url('sns_icon.png') no-repeat -401px 0px;
+                width: 50px;
+                height: 65px;
+                display: inline-block;
+                margin: 0 1em;
+
+                &:hover {
+                    background: url('sns_icon_hover.png') no-repeat -401px 0px;
+                }
+            }
+
         }
 
     }
-
-
 }
 
 
@@ -472,4 +510,13 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+        &:hover {
+            padding: 100px;
+            border-radius : 15px;
+            -moz-border-radius : 15px;
+            -webkit-border-radius : 15px;        
+            opacity : 0.6;
+            filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) ;
+        }
 }
