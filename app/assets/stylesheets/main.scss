@@ -512,11 +512,19 @@ body {
     -o-background-size: cover;
 
         &:hover {
-            padding: 100px;
-            border-radius : 15px;
-            -moz-border-radius : 15px;
-            -webkit-border-radius : 15px;        
-            opacity : 0.6;
+
+
+              -webkit-filter: blur(10px);
+              -moz-filter: blur(10px);
+              -o-filter: blur(10px);
+              -ms-filter: blur(10px);
+              filter: blur(10px);
+            
+            /* opacity : 0.6; 
             filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) ;
+            */
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            transition: all .4s ease-in-out;
         }
 }
