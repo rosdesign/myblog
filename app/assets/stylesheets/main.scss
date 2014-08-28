@@ -71,6 +71,7 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    margin-top: -30px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -368,3 +369,107 @@ body {
 
 
 /* 작업시작 */
+
+.main-black-box {
+
+    font-family: 'BM-JUA', serif;
+    
+    .black-box{
+
+        padding : 20px;
+        background : #000000;
+        background : rgba(0, 0, 0, 1);
+        opacity : 0.4;
+        border-radius : 15px;
+        -moz-border-radius : 15px;
+        -webkit-border-radius : 15px;
+        filter: alpha(opacity=40) progid:DXImageTransform.Microsoft.Alpha(opacity=40) ;
+        position: absolute;
+    }
+
+    > img {
+        border-radius: 100%;
+        border: 6px solid #FFF;
+        width: 200px;
+    }
+
+    .name{
+        font-size: 36px;
+    }
+
+    .job{
+        font-size: 20px;
+        color: #b2b2b2;
+    }
+    
+    .contents{
+        font-size: 22px;
+        margin-top: 20px;
+        padding: 0 20%;
+        /* font-family: 'nanum gothic coding', serif; 
+        letter-spacing: -4px;*/
+    }
+
+    .line{
+        margin: 40px auto;
+        border-bottom: 2px solid #989898;
+        width: 450px;
+    }
+
+    .sns-icon{
+        display: inline-block;
+        vertical-align: top;
+        
+        .youtube {
+            background: url('sns_icon.png') no-repeat -1px 0px;
+            width: 50px;
+            height: 65px;
+            position: absolute;
+
+        }
+
+        .facebook {
+            background: url('sns_icon.png') no-repeat -101px 0px;
+            width: 50px;
+            height: 65px;
+            position: absolute;
+        }
+
+        .twitter {
+            background: url('sns_icon.png') no-repeat -201px 10px;
+            width: 50px;
+            height: 65px;
+            position: absolute;
+        }
+
+        .pinterest {
+            background: url('sns_icon.png') no-repeat -301px 10px;
+            width: 50px;
+            height: 65px;
+            position: absolute;
+        }
+
+        .instagram {
+            background: url('sns_icon.png') no-repeat -401px 10px;
+            width: 50px;
+            height: 65px;
+            position: absolute;
+        }
+
+    }
+
+
+}
+
+
+.about {
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background: url('post_first.jpg');
+    background-color: #FFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
